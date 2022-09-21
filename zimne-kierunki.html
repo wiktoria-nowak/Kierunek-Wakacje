@@ -11,70 +11,27 @@
     <meta name="author" content="Wiktoria Nowak">
     <title>Kierunek Wakacje - zimne kierunki</title>
     <script src="https://kit.fontawesome.com/4f921f14d4.js" crossorigin="anonymous"></script>
-    <style>
-        /* próbne fotki */
-        .country-pic {
-            width: 40%;
-            height: 150px;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .country-pic-1 {
-            background-image: url(./img/islandia.jpg);
-        }
-
-        .country-pic-2 {
-            background-image: url(./img/holandia.jpg);
-        }
-
-        .country-pic-3 {
-            background-image: url(./img/mongolia.jpg);
-        }
-
-        .country-pic-4 {
-            background-image: url(./img/irlandia.jpg);
-        }
-
-        .country-pic-5 {
-            background-image: url(./img/wlk-brytania.jpg);
-        }
-
-        .country-pic-6 {
-            background-image: url(./img/kanada.jpg);
-        }
-
-        .country-pic-7 {
-            background-image: url(./img/dania.jpg);
-        }
-
-        .country-pic-8 {
-            background-image: url(./img/norwegia.jpg);
-        }
-
-        .country-pic-9 {
-            background-image: url(./img/finlandia.jpg);
-        }
-
-        .country-pic-10 {
-            background-image: url(./img/chiny.jpg);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cold.css">
 </head>
 
 <body>
     <div class="wrapper">
 
         <header>
-            <h1>Kierunek Wakacje <i class="fa-solid fa-plane"></i></h1>
-            <h3>Zimne kierunki</h3>
+            <div class="header-box">
+                <h1>Kierunek Wakacje <i class="fa-solid fa-plane"></i></h1>
+            </div>
         </header>
 
         <nav>
             <ul>
-                <li><a href="index.html"></a>strona główna</li>
-                <li><a href="cieple-kierunki.html"></a>ciepłe kierunki</li>
-                <li><a href="#"></a>zimne kierunki</li>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="cieple-kierunki.html">ciepłe kierunki</a></li>
+                <li><a href="#">zimne kierunki</a></li>
             </ul>
         </nav>
 
@@ -101,7 +58,7 @@
                             postaci wciąż aktywnych wulkanów i gejzerów. Ludność tego kraju jest jedną z
                             najprzyjaźniejszych społeczności, jaką spotkasz w podróży. Narodową dumą Islandczyków jest
                             ich genealgia oraz pochodzenie od Celtów i wikingów.</p>
-                        <div>
+                        <div class="country-tour">
                             <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 775km):</p>
                             <p>Reykjavík <i class="fa-solid fa-right-long"></i> Eldborg <i
                                     class="fa-solid fa-right-long"></i> Þingvellir <i
@@ -110,10 +67,9 @@
                                     class="fa-solid fa-right-long"></i> Þórsmörk <i class="fa-solid fa-right-long"></i>
                                 Heimaey <i class="fa-solid fa-right-long"></i> Jökulsárlón</p>
                         </div>
-                        <div class="weather">
-                            <h3>Reykjavík</h3>
-                            <p class="temperautre"></p>
-                            <p class="weather-icon"></p>
+                        <div class="weather-info">
+                            <p>Reykjavík</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                     </div>
                     <div class="country-pic  country-pic-1">
@@ -130,7 +86,7 @@
                             linia brzegowa jest urozmaicona licznymi zatokami. Te nieduże państwo z pewnością zauroczy
                             tych, którzy są fanami roślin - znajdą tu tysiące odmian roślin.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 263km):</p>
                         <p>Rotterdam <i class="fa-solid fa-right-long"></i> Delft <i class="fa-solid fa-right-long"></i>
                             Haga <i class="fa-solid fa-right-long"></i> Amsterdam <i class="fa-solid fa-right-long"></i>
@@ -138,10 +94,9 @@
                                 class="fa-solid fa-right-long"></i> Edam <i class="fa-solid fa-right-long"></i> Park
                             Narodowy de Goge Veluwe</p>
                     </div>
-                    <div class="weather">
-                        <h3>Amsterdam</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Amsterdam</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-2">
                     </div>
@@ -158,7 +113,7 @@
                             cywilizacją, wbrew pozorom starannie wyedukowaną. Stepowe krajobrazy, choć surowe, na pewno
                             zachwycą niejednego podróżnika.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 1700km):</p>
                         <p>jezioro Chubsuguł <i class="fa-solid fa-right-long"></i> Erdenedzuu chijd <i
                                 class="fa-solid fa-right-long"></i> Karakorum / Dolina Rzeki Ochron <i
@@ -166,10 +121,9 @@
                                 class="fa-solid fa-right-long"></i> Ułan Bator <i class="fa-solid fa-right-long"></i>
                             pustynia Gobi</p>
                     </div>
-                    <div class="weather">
-                        <h3>Ułan Bator</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Ułan Bator</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-3">
                     </div>
@@ -185,7 +139,7 @@
                             idealne miejsce do uprawiania turystyki pieszej i rowerowej. Stolica Irlandii - Dublin - ma
                             ciekawą historię. W XII w. funkcjonował tam bowiem rozwinięty ośrodek wikingów.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 650km + rejs):
                         </p>
                         <p>grobowiec Newgrange <i class="fa-solid fa-right-long"></i> Dublin <i
@@ -193,10 +147,9 @@
                             klify Moher <i class="fa-solid fa-right-long"></i> Limerick <i
                                 class="fa-solid fa-right-long"></i> Park Narodowy Killarney</p>
                     </div>
-                    <div class="weather">
-                        <h3>Dublin</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Dublin</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-4">
                     </div>
@@ -211,7 +164,7 @@
                             opcja dla tych, którzy naprawdę lubią deszczową i chłodną pogodę. Wielka Brytania jest pełna
                             wyniosłych zabytków, pięknych i bogatych w detale.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 1737km):
                         </p>
                         <p>Londyn <i class="fa-solid fa-right-long"></i> Stonehenge <i
@@ -221,10 +174,9 @@
                                 class="fa-solid fa-right-long"></i> Park Narodowy Lake District <i
                                 class="fa-solid fa-right-long"></i> Perth</p>
                     </div>
-                    <div class="weather">
-                        <h3>Londyn</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Londyn</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-5">
                     </div>
@@ -241,7 +193,7 @@
                             ciepłą odzież, a także zarezerwować mnóstwo czasu. Ogromne niezamieszkałe przestrzenie są
                             idealnym miejscem do polowań, spływów rzecznych, wędkowania i długich wypraw.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 2435km):
                         </p>
                         <p>Wyspa Księcia Edwarda <i class="fa-solid fa-right-long"></i> Lunenburg <i
@@ -249,10 +201,9 @@
                             Montreal <i class="fa-solid fa-right-long"></i> Ottawa <i
                                 class="fa-solid fa-right-long"></i> Toronto</p>
                     </div>
-                    <div class="weather">
-                        <h3>Ottawa</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Ottawa</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-6">
                     </div>
@@ -269,7 +220,7 @@
                             Legoland, Muzeum Łodzi Wikingów, świątynie - każdy powinien znaleźć tutaj coś dla siebie.
                         </p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 610km):
                         </p>
                         <p>Legoland <i class="fa-solid fa-right-long"></i> Ribe <i class="fa-solid fa-right-long"></i>
@@ -277,10 +228,9 @@
                                 class="fa-solid fa-right-long"></i> Kopenhaga <i class="fa-solid fa-right-long"></i>
                             Bornholm</p>
                     </div>
-                    <div class="weather">
-                        <h3>Kopenhaga</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Kopenhaga</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-7">
                     </div>
@@ -296,7 +246,7 @@
                             fiordy, nawiększe i najliczniejsze na świecie. Wraz z lodowcami stanowią cel wielu
                             turystycznych wypraw.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 560km):
                         </p>
                         <p>Berggen <i class="fa-solid fa-right-long"></i> Muzeum Hanzeatyckie <i
@@ -304,10 +254,9 @@
                                 class="fa-solid fa-right-long"></i> fiordy <i class="fa-solid fa-right-long"></i> Oslo
                             <i class="fa-solid fa-right-long"></i> Muzeum Łodzi Wikingów</p>
                     </div>
-                    <div class="weather">
-                        <h3>Oslo</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Oslo</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-8">
                     </div>
@@ -325,17 +274,16 @@
                             dzielnicami. W Laponii możesz zmierzyć się z olbrzymimi pustymi przestrzeniami i zanocować w
                             igloo, przejechać się psim zaprzęgiem, czy poznać kulturę w wiosce Sevettijarvi.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 1500km):
                         </p>
                         <p>Helsinki <i class="fa-solid fa-right-long"></i> Turku <i class="fa-solid fa-right-long"></i>
                             Oulu <i class="fa-solid fa-right-long"></i> Rovaniemi <i class="fa-solid fa-right-long"></i>
                             Laponia <i class="fa-solid fa-right-long"></i> Sevettijarvi</p>
                     </div>
-                    <div class="weather">
-                        <h3>Helsinki</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Helsinki</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-9">
                     </div>
@@ -351,7 +299,7 @@
                             miesiąc wybierzesz a podróż, wakacje w Chinach będą niezapomniane. Kultura, zabytki,
                             roślinność - to wszystko powoduje, że mają one wyjątkowy charakter.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 8465km):
                         </p>
                         <p>Wielki Mur Chiński <i class="fa-solid fa-right-long"></i> Pekin <i
@@ -362,10 +310,9 @@
                                 class="fa-solid fa-right-long"></i> Lijiang <i class="fa-solid fa-right-long"></i> Pałac
                             Potala w Lhasie</p>
                     </div>
-                    <div class="weather">
-                        <h3>Pekin</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Pekin</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic  country-pic-10">
                     </div>

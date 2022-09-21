@@ -11,71 +11,27 @@
     <meta name="author" content="Wiktoria Nowak">
     <title>Kierunek Wakacje - ciepłe kierunki</title>
     <script src="https://kit.fontawesome.com/4f921f14d4.js" crossorigin="anonymous"></script>
-    <style>
-        /* próbne fotki */
-        .country-pic {
-            width: 40%;
-            height: 150px;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .country-pic-1 {
-            background-image: url(./img/portugalia.jpg);
-        }
-        
-        .country-pic-2 {
-            background-image: url(./img/włochy.jpg);
-        }
-
-        .country-pic-3 {
-            background-image: url(./img/chorwacja.jpg);
-        }
-
-        .country-pic-4{
-            background-image: url(./img/grecja.jpg);
-        }
-
-        .country-pic-5 {
-            background-image: url(./img/hiszpania.jpg);
-        }
-
-        .country-pic-6 {
-            background-image: url(./img/tunezja.jpg);
-        }
-
-        .country-pic-7 {
-            background-image: url(./img/madagaskar.jpg);
-        }
-
-        .country-pic-8 {
-            background-image: url(./img/turcja.jpg);
-        }
-
-        .country-pic-9 {
-            background-image: url(./img/filipiny.jpg);
-        }
-
-        .country-pic-10 {
-            background-image: url(./img/meksyk.jpg);
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/warm.css">
 </head>
 
 <body>
     <div class="wrapper">
 
         <header>
-            <h1>Kierunek Wakacje <i class="fa-solid fa-plane"></i></h1>
-            <h3>Ciepłe kierunki</h3>
+            <div class="header-box">
+                <h1>Kierunek Wakacje <i class="fa-solid fa-plane"></i></h1>
+            </div>
         </header>
 
         <nav>
             <ul>
-                <li><a href="index.html"></a>strona główna</li>
-                <li><a href="#"></a>ciepłe kierunki</li>
-                <li><a href="zimne-kierunki.html"></a>zimne kierunki</li>
+                <li><a href="index.html">strona główna</a></li>
+                <li><a href="#">ciepłe kierunki</a></li>
+                <li><a href="zimne-kierunki.html">zimne kierunki</a></li>
             </ul>
         </nav>
 
@@ -91,16 +47,15 @@
                 <div class="country">
                     <div class="country-info">
                         <h3><i class="fa-solid fa-location-dot"></i> Portugalia</h3>
-                        <p>Na obszarze Portugalii, otoczonej wodami Oceanu Atlantyckiego, przeważają wyżyny i pasma górskie. Panujący tu klimat podzwrotnikowy i długa linia wybrzeża powoduje, że jest to miejsce idealne na wypoczynek. Poza tym Portugalia ma też do zaoferowania wiele atrakcyjnych zabytków. Dawne twierdze, riuny rzymskich świątyń, zaytki sakralne, malownicze miasta...to wszystko spowoduje, że się w niej zakochasz i nie będziesz chciał jej opuścić. Dla tych, którzy mają więcej czasu polecamy zwiedzić Maderę - niewielki archipelag na Atlantyku.</p>
+                        <p>Na obszarze Portugalii, otoczonej wodami Oceanu Atlantyckiego, przeważają wyżyny i pasma górskie. Panujący tu klimat podzwrotnikowy i długa linia wybrzeża powoduje, że jest to miejsce idealne na wypoczynek. Poza tym Portugalia ma też do zaoferowania wiele atrakcyjnych zabytków. Dawne twierdze, riuny rzymskich świątyń, zaytki sakralne, malownicze miasta... to wszystko spowoduje, że się w niej zakochasz i nie będziesz chciał jej opuścić. Dla tych, którzy mają więcej czasu polecamy zwiedzić Maderę - niewielki archipelag na Atlantyku.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 1060km + 4h lotu):</p>
                         <p>Porto <i class="fa-solid fa-right-long"></i> Fatima <i class="fa-solid fa-right-long"></i> Tomar <i class="fa-solid fa-right-long"></i> Sintra <i class="fa-solid fa-right-long"></i> Lizbona <i class="fa-solid fa-right-long"></i> Madera (podróż samolotem) <i class="fa-solid fa-right-long"></i> Évora <i class="fa-solid fa-right-long"></i> Algarve</p>
                     </div>
-                    <div class="weather">
-                        <h3>Lizbona</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Lizbona</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-1">
                     </div>
@@ -111,14 +66,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Włochy</h3>
                         <p>Ten kraj na półwyspie Apenińskim to swoiste muzeum kultury. Wspaniała kuchnia, moda, dzieła sztuki oraz przepiękny krajobraz zadowolą każdego podróżnika, który nie boi się tłumów. Jeśli nie interesują Cię romantyczne wieczory w miasteczkach, z pewnością zachwycą Cię wysokie pasma górskie, bogata szata czy wulkany. Kultura i styl życia mieszkańców sprawi, że wyjazd będzie niezapomniany i z pewnością zajmnie w sercu szczególne miejsce. Włochy to połączenie tego, co turyści lubią najbardziej: pięknej przyrody i bogactwa zabytków.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 2070km):</p>
                         <p>Mediolan <i class="fa-solid fa-right-long"></i> Wenecja <i class="fa-solid fa-right-long"></i> Toskania <i class="fa-solid fa-right-long"></i> Rzym <i class="fa-solid fa-right-long"></i> Neapol <i class="fa-solid fa-right-long"></i> Park Narodowy Etny <i class="fa-solid fa-right-long"></i> Palermo i Monreale</p>
                     </div>
-                    <div class="weather">
-                        <h3>Rzym</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Rzym</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-2">
                     </div>
@@ -129,14 +83,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Chorwacja</h3>
                         <p>Chorwacja jest jednym z ulubionych miejsc Polaków. Wybrzeże z wieloma turystycznymi miejscowościami, a także śródziemnomorski klimat z temperaturami latem do 35°C i ciepłe zimy spodobają się tym, którzy nie lubią zimna. Dzięki panującym tam warunkom, możesz myśleć o wybraniu się na wakacje nawet w kwietniu lub październiku. Wielka liczba malowniczych wysp, zróżnicowana przyroda i zabytki pochodzące z czasów rzymskich każdego roku przyciągają miliony turystów. Chorwacja zachwyci zarówno fanów historii jak i spokojnego plażowania.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 1236km w tym zwiedzanie regionu):</p>
                         <p>Dubrownik <i class="fa-solid fa-right-long"></i> Split <i class="fa-solid fa-right-long"></i> Trogir <i class="fa-solid fa-right-long"></i> Szybenik <i class="fa-solid fa-right-long"></i> Park Narodowy Krka <i class="fa-solid fa-right-long"></i> Zadar <i class="fa-solid fa-right-long"></i> wyspa Pag <i class="fa-solid fa-right-long"></i> Split <i class="fa-solid fa-right-long"></i> Park Narodowy Paklenica <i class="fa-solid fa-right-long"></i> Park Narodowy Jezior Plitwickich <i class="fa-solid fa-right-long"></i> Kvarner <i class="fa-solid fa-right-long"></i> Istria</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Dubrownik</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Dubrownik</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-3">
                     </div>
@@ -147,14 +100,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Grecja</h3>
                         <p>Usytuowana na Półwyspie Bałkańskim i kilku archipelagach Grecja to kraj niezwykle zróżnicowany pod względem przyrody i kultury. Poza częścią lądową państwo to obejmuje 3000 wysp. Około 81% powierzchni Grecji zajmują góry. Interesująca linia brzegowa pocięta zatokami i półwyspami powoduje, że jest to idealne miejsce na wymarzone wakacje. Kraj jest swoistą historyczną mekką z olbrzymią liczbą pamiątek pierwszej europejskiej wysokorozwiniętej cywilizacji i kultury.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 2530km w tym zwiedzanie regionu):</p>
                         <p>Półwysep Chalcydycki <i class="fa-solid fa-right-long"></i> Janina <i class="fa-solid fa-right-long"></i> góry Pindos <i class="fa-solid fa-right-long"></i> Meteory <i class="fa-solid fa-right-long"></i> Delfy <i class="fa-solid fa-right-long"></i> Ateny <i class="fa-solid fa-right-long"></i> Peloponez <i class="fa-solid fa-right-long"></i> Kreta</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Ateny</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Ateny</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-4">
                     </div>
@@ -165,14 +117,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Hiszpania</h3>
                         <p>To kraj z długimi tradycjami kolonialnymi, który kształtował kulturę i sztukę europejską. Teren tego państwa stanowi swoisty kalejdoskop krajobrazów i kultur. Katalonia, Andaluzja czy Asturia - każde z nich, to odrębne światy z własnymi tradycjami. Hiszpania pod względem turystycznym jest niezwykle bogatym krajem. Można tam podziwiać niezwykłe zabytki, zwiedzać galerie sztuki, zachwycać się krajobrazem, bądź rozkoszować winem i bawić się na hucznych fiestach.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 2735km):</p>
                         <p>Santiago de Compostela <i class="fa-solid fa-right-long"></i> Toledo <i class="fa-solid fa-right-long"></i> Sewilla <i class="fa-solid fa-right-long"></i> Cueva de Nerja <i class="fa-solid fa-right-long"></i> Alhambra i Grenada <i class="fa-solid fa-right-long"></i> Almeriá <i class="fa-solid fa-right-long"></i> Saragossa <i class="fa-solid fa-right-long"></i> Montserrat <i class="fa-solid fa-right-long"></i> Barcelona</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Madryt</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Madryt</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-5">
                     </div>
@@ -183,14 +134,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Tunezja</h3>
                         <p>Tunezja położona w północnej części Afryki to kraj, którego dużą część stanowią tereny pustynne. Turystycznie przyciąga przede wszystkim miłośników tropikalnych plaż, ciepłego morza i wakacyjnego raju w kurortach na wybrzeżu, ale można tu naleźć także wiele ciekawych zabytków. Podróżnicy nie zawiodą się zwiedzając tętniące życiem miasto Susa, słynące z bogatej historii, a także przepięknych plaż. Placyki, fontanny, fantazyjne wzory powodują, że to miejsce ma swój urok i jest często odwiedzanym punktem na mapie.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 855km):</p>
                         <p>Dugga <i class="fa-solid fa-right-long"></i> jezioro Aszkal <i class="fa-solid fa-right-long"></i> Kartagina <i class="fa-solid fa-right-long"></i> Tunis <i class="fa-solid fa-right-long"></i> Takruna <i class="fa-solid fa-right-long"></i> Susa <i class="fa-solid fa-right-long"></i> Kairuan <i class="fa-solid fa-right-long"></i> Al-Dżamm <i class="fa-solid fa-right-long"></i> Duz</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Tunis</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Tunis</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-6">
                     </div>
@@ -201,14 +151,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Madagaskar</h3>
                         <p>Kraj zajmujący wyspę o tej samej nazwie znajduje się przy południowo-wschodnich wybrzeżach Afryki, w zachodniej części Oceanu Indyjskiego. Jest to czwarta pod względem wielkości wyspa na świecie.Turystów zachwycają nie tylko przepiękne, rajskie plaże, ale także atrakcje takie jak jaskinia Anjohibe, w której według legend można spotkać duchy wymarłego plemienia Vazimba. Pomimo tłumów, które przybywają na Madagaskar w sezonie, warto nie skreślać tej wyspy z listy. Co powiesz na wprost idealne miesjce do nurkowania?</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 3240km + rejs łodzią):</p>
                         <p>Archipelag Nosy Be <i class="fa-solid fa-right-long"></i> Mahajanga <i class="fa-solid fa-right-long"></i> Anjohibe <i class="fa-solid fa-right-long"></i> jezioro Alaotra <i class="fa-solid fa-right-long"></i> Toamasina <i class="fa-solid fa-right-long"></i> kanał Pangalanes <i class="fa-solid fa-right-long"></i> Antsirabe <i class="fa-solid fa-right-long"></i> Tsingy de Bemaraha <i class="fa-solid fa-right-long"></i> Aleja Baobabów <i class="fa-solid fa-right-long"></i> Tôlanaro</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Antanarywa</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Antanarywa</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-7">
                     </div>
@@ -219,14 +168,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Turcja</h3>
                         <p>Turcja znajduje się w większości w Azji (97%), a częściowo w Europie. Część azjatycka jest oddzielona Morzem Marmara oraz cieśninami Bosfor i Dardanele. Dominującą religią tego kraju jest islam. Turcja ma długą i burzliwą historię, a z racji atutów krajobrazowych, pięknej pogody oraz wielu obiektów historycznych jest bardzo atrakcyjna turystycznie. Stambuł jest miejscem koniecznym, jeśli wybierasz się do Turcji. Różnorodność religijna i kulturowa pozostawiła tam ślady w postaci dziesiątek zabytków.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 3530km w tym zwiedzanie i przeprawa promem):</p>
                         <p>Safranbolu <i class="fa-solid fa-right-long"></i> Stambuł <i class="fa-solid fa-right-long"></i> Troja <i class="fa-solid fa-right-long"></i> Efez <i class="fa-solid fa-right-long"></i> Bodrum <i class="fa-solid fa-right-long"></i> Pamukkale i Hierapolis <i class="fa-solid fa-right-long"></i> Kapadocja <i class="fa-solid fa-right-long"></i> Nemrut Dağı <i class="fa-solid fa-right-long"></i> Ararat</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Stambuł</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Stambuł</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-8">
                     </div>
@@ -237,14 +185,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Filipiny</h3>
                         <p>Filipiny to państwo wyspiarskie w Azji Południowo-Wschodniej, nad Oceanem Spokojnym. Kraj ten znajduje się w strefie klimatu równikowego oraz na obszarze Pacyficznego Pierścienia Ognia, co powoduje, że jest narażony na częste katastrofy naturalne takie jak trzęsienia ziemi czy wybuchy wulkanów. Filipiny to jeden z najbogatszych obszarów na świecie pod względem bioróżnorodności. Tworzy je aż 7107 wysp. Jest to wybór dla tych, którzy potrzebują rajskiego wypoczynku, jednak nie boją się tłumów, ponieważ Filipiny są jednym z najbardziej zaludnionych państw.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 2370km w tym przeprawy promowe i zwiedzanie terenu):</p>
                         <p>Vigan <i class="fa-solid fa-right-long"></i> Ifugao <i class="fa-solid fa-right-long"></i> La Union <i class="fa-solid fa-right-long"></i> Boracay <i class="fa-solid fa-right-long"></i> Iloilo <i class="fa-solid fa-right-long"></i> Bacolod <i class="fa-solid fa-right-long"></i> Bohol <i class="fa-solid fa-right-long"></i> Davao <i class="fa-solid fa-right-long"></i> Zamboanga</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Manila</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Manila</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-9">
                     </div>
@@ -255,14 +202,13 @@
                         <h3><i class="fa-solid fa-location-dot"></i> Meksyk</h3>
                         <p>Meksyk jest jednym z najpopularniejszych krajów turystycznych na świecie. Jest to dość zróżnicowane państwo, w którym można spędzić czas na wiele sposobów: piękne plaże czekają na miłośników błogiego lenistwa, a zwolenników bardziej aktywnego wypoczynku ucieszą liczne zabytki np. Piramidy Majów. Meksyk to także jeden z najaktywniejszych tektonicznie obszarów świata. Kraj ma do zaoferowania mnóstwo ciekawych miejsc, w tym aż 31 obiektów wpisanych na listę UNESCO.</p>
                     </div>
-                    <div>
+                    <div class="country-tour">
                         <p><i class="fa-solid fa-map-location-dot"></i> Miejsca warte odwiedzenia (trasa 2630km):</p>
                         <p>Tequila <i class="fa-solid fa-right-long"></i> Guadalajara <i class="fa-solid fa-right-long"></i> jezioro Chapala <i class="fa-solid fa-right-long"></i> Guanajuato <i class="fa-solid fa-right-long"></i> Teotihuacán <i class="fa-solid fa-right-long"></i> Meksyk <i class="fa-solid fa-right-long"></i> Puebla <i class="fa-solid fa-right-long"></i> Palenque <i class="fa-solid fa-right-long"></i> Campeche <i class="fa-solid fa-right-long"></i> Mérida <i class="fa-solid fa-right-long"></i> Chichén Itzá <i class="fa-solid fa-right-long"></i> Cancún</p>
                     </div> 
-                    <div class="weather">
-                        <h3>Meksyk</h3>
-                        <p class="temperautre"></p>
-                        <p class="weather-icon"></p>
+                    <div class="weather-info">
+                        <p>Meksyk</p>
+                        <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                     </div>
                     <div class="country-pic country-pic-10">
                     </div>
@@ -276,6 +222,8 @@
             Kierunek Wakacje <i class="fa-solid fa-plane"></i> 2022
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
     </div>
 </body>
 

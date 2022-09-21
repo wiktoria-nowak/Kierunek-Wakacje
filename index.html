@@ -11,70 +11,27 @@
     <meta name="author" content="Wiktoria Nowak">
     <title>Kierunek Wakacje!</title>
     <script src="https://kit.fontawesome.com/4f921f14d4.js" crossorigin="anonymous"></script>
-    <style>
-        /* próbne fotki */
-        .country-pic {
-            width: 40%;
-            height: 150px;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .country-pic-1 {
-            background-image: url(./img/grecja.jpg);
-        }
-        
-        .country-pic-2 {
-            background-image: url(./img/chorwacja.jpg);
-        }
-
-        .country-pic-3 {
-            background-image: url(./img/turcja.jpg);
-        }
-
-        .country-pic-4{
-            background-image: url(./img/albania.jpg);
-        }
-
-        .country-pic-5 {
-            background-image: url(./img/malta.jpg);
-        }
-
-        .country-pic-6 {
-            background-image: url(./img/hiszpania.jpg);
-        }
-
-        .country-pic-7 {
-            background-image: url(./img/bułgaria.jpg);
-        }
-
-        .country-pic-8 {
-            background-image: url(./img/czarnogóra.jpg);
-        }
-
-        .country-pic-9 {
-            background-image: url(./img/włochy.jpg);
-        }
-
-        .country-pic-10 {
-            background-image: url(./img/portugalia.jpg);
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
     <div class="wrapper">
 
         <header>
-            <h1>Kierunek Wakacje <i class="fa-solid fa-plane"></i></h1>
+            <div class="header-box">
+                <h1>Kierunek Wakacje <i class="fa-solid fa-plane"></i></h1>
+            </div>
         </header>
 
         <nav>
             <ul>
-                <li><a href="#"></a>strona główna</li>
-                <li><a href="cieple-kierunki.html"></a>ciepłe kierunki</li>
-                <li><a href="zimne-kierunki.html"></a>zimne kierunki</li>
+                <li><a href="#">strona główna</a></li>
+                <li><a href="cieple-kierunki.html">ciepłe kierunki</a></li>
+                <li><a href="zimne-kierunki.html">zimne kierunki</a></li>
             </ul>
         </nav>
 
@@ -105,11 +62,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Grecja #1</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Grecja #1</h3>
                             <p>Grecja znajduje się na pierwszym miejscu najczęściej wyszukiwanych krajów wśród turystów.
                                 Posiada niesamowitą ofertę turystyczną, a jej bogactwo archeologiczne i historyczne
                                 zaciekawi nawet tych wymagających podróżników. Piękne plaże i krystalicznie czysta woda
                                 sprawią, że te wakacje będą niezapomniane!</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Ateny</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-1">
                         </div>
@@ -117,11 +78,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Chorwacja #2</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Chorwacja #2</h3>
                             <p>Na drugim miejscu znajduje się kraj, który Polacy uwielbiają, czyli Chorwacja. Bliskość
                                 tego kraju, do którego można dostać się samochodem, piękno krajobrazów i różnorodność
                                 miejsc do odwiedzenia, to to, co przyciąga tu turystów nie tylko w sezonie. Dubrovnik,
                                 Split, Zagrzeb czy Istria to tylko niektóre z miejsc wartych zobaczenia.</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Dubrownik</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-2">
                         </div>
@@ -129,11 +94,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Turcja #3</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Turcja #3</h3>
                             <p>Trzecie miejsce na podium wsród najpopularniejszych kierunków jest Turcja, która zaskoczy
                                 nie tylko pięknem plaż, ale także swoją przepyszną kuchnią. Niezależnie od tego, czy
                                 masz ochotę na plażowanie w Antalyi, wypad do Stambułu czy romantyczną wycieczkę do
                                 Kapadocji - w Turcji znajdziesz wszystko, czego zapragniesz.</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Stambuł</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-3">
                         </div>
@@ -141,11 +110,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Albania #4</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Albania #4</h3>
                             <p>Albania, choć zaraz za podium, nie jest kierunkiem zdominowanym przez turystów. W
                                 ostatnim czasie cieszy się dużym zainteresowaniem, co nie dziwi nas ze względu na piękno
                                 krajobrazu tego kraju. Piękno przyrody jest tu widoczne na każdym kroku. Albania to nie
                                 tylko piękne góry i magiczne wybrzeże, ale także dobra zabawa!</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Tirana</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-4">
                         </div>
@@ -153,11 +126,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Malta #5</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Malta #5</h3>
                             <p>Ten niewielki archipelag jest jednym z ulubionych celów turystów. Malta jest magicznym
                                 miejscem, które zachwyci nie tylko krajobrazem, ale też swoją historią. Jesteś fanem
                                 nurkowania? Jeśli tak, Malta powinna się znaleźć na twojej liście. Swoją sztuką i
                                 architekturą Malta zachwyci także wymagających fanów tego rodzaju rozrywek.</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Valletta</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-5">
                         </div>
@@ -165,11 +142,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Hiszpania #6</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Hiszpania #6</h3>
                             <p>Hiszpania zawsze była chętnie wybieranym kierunkiem wśród turystów i nie wróżymy, by
                                 miało się to zmienić. Zachwyci Cię nie tylko jej zróżnicowny krajobraz. To kraj ludzi
                                 cieszących się każdym dniem i lubiących nocne życie, z którymi przeżyjesz szaloną
                                 fiestę. Nie zabraknie też przepysznego jedzenia!</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Madryt</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-6">
                         </div>
@@ -177,11 +158,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Bułgaria #7</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Bułgaria #7</h3>
                             <p>Położona nad Morzem Czarnym Bułgaria cieszy się niezwykłą popularnością nie tylko wsród
                                 polskich turystów. Bogata oferta imprezowo-kulturalna przyciąga turystów z całego
                                 świata, jednak znajdą się i miejsca, gdzie warto uciec od świata. Szerokie, piaszczyste
                                 plaże to tylko przedsmak jej prawdziwego piękna.</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Sofia</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-7">
                         </div>
@@ -189,11 +174,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Czarnogóra #8</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Czarnogóra #8</h3>
                             <p>Jeden z najmniejszych i najpiękniejszych krajów na Bałkanach uplasował się na miejscu 8.
                                 Zapierające dech w piersiach góry, Adriatyk, jeziora czy kaniony zachwycą każdego
                                 turystę. Dla tych,którzy pragną czegoś więcej niż przepiękne widoki, też się coś
                                 znajdzie!</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Podgornica</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-8">
                         </div>
@@ -201,11 +190,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Włochy #9</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Włochy #9</h3>
                             <p>Włochy to jedno z najbardziej klimatycznych miejsc w Europie. Zachwycą Cię nie tylko
                                 swoją kulturą pełną niesamowitych dzieł i zabytków, ale i uwielbianą na całym świecie
                                 kuchnią. Koniecznie spróbujcie pizzy, carbonary i bruschetty, które przygotowane przez
                                 lokalnych kucharzy smakują wprost obłędnie.</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Rzym</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-9">
                         </div>
@@ -213,11 +206,15 @@
 
                     <div class="country">
                         <div class="country-info">
-                            <h3>Portugalia #10</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i> Portugalia #10</h3>
                             <p>Ranking najpopularniejszych kierunków tego roku zamyka Portugalia. Pełna smaków,
                                 zapachów, wina, pięknych krajobrazów, plaż, klifów i miejsc do surfingu jest warta
                                 odwiedzenia o każdej porze roku. Koneserzy wina i fani dobrej kuchni będą zdecydowanie
                                 zachwyceni i na pewno przywiozą do domu przepyszne pamiątki.</p>
+                        </div>
+                        <div class="weather-info">
+                            <p>Lizbona</p>
+                            <button class="weather-button">sprawdź pogodę <i class="fa-solid fa-temperature-quarter"></i></button>
                         </div>
                         <div class="country-pic country-pic-10">
                         </div>
@@ -228,23 +225,23 @@
 
             <section class="advices">
                 <h2>Dobrze się zastanów!</h2>
-                <p>Pamiętaj, że wybranie kierunku to dopiero początek jeśli chodzi o przygotowania do podróży. Wybranie
+                <p><i class="fa-solid fa-circle-info"></i> Pamiętaj, że wybranie kierunku to dopiero początek jeśli chodzi o przygotowania do podróży. Wybranie
                     środka transportu, zabukowanie biletów i hotelu nie zagwarantuje udanej podróży.</p>
-                <p>Przede wszystkim zorientuj się, czy obecnie na terenie wybranego przez Ciebie kraju jest bezpiecznie
+                <p><i class="fa-solid fa-circle-info"></i> Przede wszystkim zorientuj się, czy obecnie na terenie wybranego przez Ciebie kraju jest bezpiecznie
                     i nie panują tam konflikty zbrojne lub inne zagrażające życiu czynniki. Warto zerknąć na strony
                     rządowe państw, które przeważnie mają przygotowane informacje dla przybywających turystów. Strony
                     rządowe są rzetelnym źródłem informacji jeśli chodzi o wymagania prawne, takie jak wizy. Warto także
                     wiedzieć jakie prawa przysługują Ci w odwiedzanym miejscu jako turyście. Nie zapomnij także
                     przejrzeć internet w poszukiwaniu opinii innych turystów, którzy chętnie dzielą się swoimi
                     doświadczeniami i mogą przekazać Ci przydatną wiedzę.</p>
-                <p>Jeśli wcześniej nie odwiedzałeś danego kraju zorientuj się także, czy nie musisz odbyć potrzebnych
+                <p><i class="fa-solid fa-circle-info"></i> Jeśli wcześniej nie odwiedzałeś danego kraju zorientuj się także, czy nie musisz odbyć potrzebnych
                     szczepień. Pozwolą one na zmniejszenie niebezpieczeństwa zachorowania. Jeśli udajesz się w podróż do
                     państwa znajdującego się w Unii Europejskiej, nie zapomnij wyrobić sobie Europejskiej Karty
                     Ubezpieczenia Zdrowotnego (EKUZ). Uprawnia ona do wszystkich świadczeń zdrowotnych za granicą, które
                     będą niezbędne w Twoim stanie zdrowia do końca pobytu w danym kraju, dlatego jest to podstawowe
                     zabezpieczenie w razie wypadków bądź urazów. Jeśli chcesz, możesz także skorzystać z polis
                     oferowanych przez ubezpieczycieli.</p>
-                <p>W podróży pamiętaj także o różnicach kulturowych i ich poszanowaniu, szczególnie podczas zwiedzania
+                <p><i class="fa-solid fa-circle-info"></i> W podróży pamiętaj także o różnicach kulturowych i ich poszanowaniu, szczególnie podczas zwiedzania
                     miejsc kultu religijnego, gdzie należy być stosownie ubranym. Zapoznaj się także z miejscowymi
                     zwyczajami, by nie popełnić gafy, bądź nie złamać prawa!</p>
                 <p>Wierzymy, że dobra zabawa w podróży zaczyna się od solidnego przygotowania. Bądź gotowy nie tylko na
@@ -254,9 +251,20 @@
 
         </main>
 
+        <div class="popup">
+            <div class="popup-box">
+                <p class="city-name"></p>
+                <p class="temperature"></p>
+                <p class="weather-icon"></p>
+                <button class="popup-btn">zamknij</button>
+            </div>
+        </div>
+
         <footer>
             Kierunek Wakacje <i class="fa-solid fa-plane"></i> 2022
         </footer>
+
+        <script src="script.js"></script>
 
     </div>
 </body>
