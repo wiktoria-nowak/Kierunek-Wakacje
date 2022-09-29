@@ -37,3 +37,45 @@
 .country-pic-10 {
     background-image: url(../img/chiny.jpg);
 }
+
+@media (min-width: 730px) {
+    .country-pic-1 {
+        background-image: url(../img/islandia-2.jpg);
+    }
+
+    .country-pic-2 {
+        background-image: url(../img/holandia-2.jpg);
+    }
+
+    .country-pic-3 {
+        background-image: url(../img/mongolia-2.jpg);
+    }
+
+    .country-pic-4 {
+        background-image: url(../img/irlandia-2.jpg);
+    }
+
+    .country-pic-5 {
+        background-image: url(../img/wlk-brytania-2.jpg);
+    }
+
+    .country-pic-6 {
+        background-image: url(../img/kanada-2.jpg);
+    }
+
+    .country-pic-7 {
+        background-image: url(../img/dania-2.jpg);
+    }
+
+    .country-pic-8 {
+        background-image: url(../img/norwegia-2.jpg);
+    }
+
+    .country-pic-9 {
+        background-image: url(../img/finlandia-2.jpg);
+    }
+
+    .country-pic-10 {
+        background-image: url(../img/chiny-2.jpg);
+    }
+}

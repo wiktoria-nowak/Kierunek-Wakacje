@@ -12,7 +12,6 @@
 }
 
 body {
-    /* background-image: linear-gradient(45deg, #5B8291 50%, #1FC5A8); */
     background-color: var(--dark-one);
     font-family: 'Roboto', sans-serif;
 }
@@ -70,8 +69,7 @@ li {
 li a {
     display: inline-block;
     margin: 0 auto;
-    padding: 10px 80px;
-    /* text-transform: uppercase; */
+    padding: 10px 100px;
     text-decoration: none;
     color: #2E424D;
     font-size: 0.8rem;
@@ -105,8 +103,8 @@ section {
 section h2 {
     margin: 2px;
     font-size: 1.3rem;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
     color: var(--dark-one);
 }
 
@@ -123,14 +121,13 @@ p span {
 /* kraje */
 
 .country {
+    display: flex;
+    flex-direction: column;
     margin: 15px 0;
     border: 1px solid var(--light-gray);
     border-radius: 8px;
     box-shadow: 0 0 10px 3px var(--light-gray);
-    /* background-color: var(--light-gray); */
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .country-info {
@@ -160,7 +157,7 @@ p span {
 /* czesci krajow */
 
 .country-tour {
-    margin: 0 5px 10px;
+    margin: 0 5px 15px;
     padding: 15px;
     border: 1px solid var(--dark-dirty);
     border-radius: 8px;
@@ -170,6 +167,7 @@ p span {
 .country-tour p:first-child {
     font-weight: bold;
     color: var(--dark-one);
+    margin-top: 0;
 }
 
 .fa-map-location-dot, .fa-right-long {
@@ -208,14 +206,15 @@ p span {
     align-items: center;
     position: fixed;
     width: 70%;
-    height: 50%;
+    height: 45%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(242, 76, 47);
+    background-color: var(--light-blue);
     border-radius: 8px;
     box-shadow: 0 0 30px 7px black;
     padding: 20px;
+    transition: left 2s;
 }
 
 .popup.active {
@@ -229,10 +228,62 @@ p span {
     width: 98%;
     height: 98%;
     background-color: #fff;
-    /* padding: 10px; */
     border-radius: 8px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.city-name,
+.temperature,
+.weather-icon {
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.city-name {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: var(--dark-one);
+}
+
+.temperature,
+.weather-icon {
+    font-size: 1.2rem;
+}
+
+.temperature {
+    color: #5B8291;
+}
+
+/* ikonki */
+
+.fa-cloud-bolt,
+.fa-cloud-showers-heavy {
+    color: rgb(10, 8, 48);
+}
+
+.fa-droplet,
+.fa-snowflake {
+    color: rgb(142, 207, 247);
+}
+
+.fa-smog {
+    color: rgb(126, 126, 126);
+}
+
+.fa-sun {
+    color: rgb(255, 222, 37);
+}
+
+.fa-cloud-sun,
+.fa-cloud-sun-rain {
+    color: rgb(226, 163, 1);
+}
+
+.fa-cloud {
+    color: #267695;
 }
 
 .popup-btn {
@@ -241,13 +292,13 @@ p span {
     background-color: var(--light-gray);
     border: none;
     border-radius: 8px;
-    color: rgb(242, 76, 47);
+    color: var(--dark-one);
     font-weight: bold;
     transition: color .3s, background-color .3s;
 }
 
 .popup-btn:hover {
-    background-color: rgb(242, 76, 47);
+    background-color: var(--dark-one);
     color: var(--light-gray);
 }
 
@@ -255,9 +306,357 @@ p span {
 
 footer {
     width: 100%;
-    height: 8vh;
+    height: 9vh;
     text-align: center;
-    line-height: 8vh;
+    line-height: 9vh;
     background-color: var(--light-blue);
     color: #fff;
+}
+
+@media (min-width: 530px) {
+    .wrapper {
+        margin: 0 10px;
+    }
+
+    header {
+        height: 57vh;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    li a {
+        padding: 10px 195px;
+    }
+
+    section {
+        padding: 25px;
+        margin: 15px 5px;
+    }
+
+    .country {
+        margin: 25px 10px;
+        box-shadow: 0 0 10px 6px var(--light-gray);
+    }
+
+    .cold-countries, .warm-countries  {
+        padding: 12px 25px;
+    }
+    
+    .country-info {
+        padding: 20px;
+    }
+
+    .weather-info button {
+        margin: 0 auto 20px;
+        padding: 10px 15px;
+    }
+    
+    .country-pic {
+        width: 100%;
+        height: 180px;
+    }
+
+    .country-tour {
+        margin: 0 20px 20px;
+        padding: 20px;
+    }
+
+    .popup {
+        width: 40%;
+        height: 70%;
+    }
+
+    footer {
+        height: 15vh;
+        line-height: 15vh;
+    }
+}
+
+@media (min-width: 640px) {
+    .wrapper {
+        margin: 0 25px;
+    }
+
+    header {
+        height: 62vh;
+    }
+
+    .header-box h1 {
+        font-size: 2.5rem;
+    }
+
+    li a {
+        font-size: 1rem;
+        padding: 10px 215px;
+    }
+
+    section h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    }
+
+    .country {
+        margin: 25px 30px;
+        box-shadow: 0 0 10px 8px var(--light-gray);
+    }
+
+    .cold-countries, .warm-countries  {
+        padding: 22px 25px;
+    }
+    
+    .country-info {
+        padding: 30px;
+    }
+
+    .weather-info button {
+        margin: 0 auto 20px;
+        padding: 10px 15px;
+    }
+    
+    .country-pic {
+        height: 200px;
+    }
+
+    .country-tour {
+        margin: 0 30px 20px;
+    }
+
+    .popup {
+        width: 40%;
+        height: 70%;
+    }
+
+    footer {
+        font-size: 1.2rem;
+        height: 18vh;
+        line-height: 18vh;
+    }
+}
+
+@media (min-width: 730px) {
+    header {
+        height: 64vh;
+    }
+
+    .wrapper {
+        margin: 0 35px;
+    }
+
+    .header-box h1 {
+        font-size: 2.7rem;
+    }
+
+    li a {
+        padding: 10px 235px;
+    }
+
+    section {
+        padding: 45px;
+    }
+
+    section h2 {
+    font-size: 1.6rem;
+    }
+
+    section h3 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+    font-size: 1.1rem;
+    }
+
+    .country {
+        margin: 35px 40px;
+        box-shadow: 0 0 16px 8px var(--light-gray);
+    }
+
+    .cold-countries, .warm-countries  {
+        padding: 18px 25px;
+    }
+    
+    .country-info {
+        padding: 40px;
+    }
+
+    .weather-info button {
+        font-size: 1rem;
+        margin: 0 auto 30px;
+        padding: 15px 20px;
+    }
+    
+    .country-pic {
+        height: 220px;
+    }
+
+    .country-tour {
+        margin: 0 40px 30px;
+    }
+
+    .popup {
+        width: 35%;
+        height: 60%;
+    }
+
+    footer {
+        font-size: 1.3rem;
+        height: 18vh;
+        line-height: 18vh;
+    }
+}
+
+@media (min-height: 800px) and (orientation: portrait) {
+    .popup {
+        width: 60%;
+        height: 30%;
+    }
+}
+
+@media (min-width: 820px) {
+    .header {
+        height: 40vh;
+    }
+
+    .header-box h1 {
+        font-size: 4rem;
+    }
+
+    nav {
+        margin: 20px auto;
+    }
+
+    li a {
+        font-size: 1.4rem;
+        padding: 20px 260px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section h3 {
+        font-size: 1.7em;
+    }
+
+    section p {
+        font-size: 1.3rem;
+    }
+
+    .weather-info button {
+        font-size: 1.2rem;
+        padding: 25px 40px;
+    }
+    
+    .country-pic {
+        height: 340px;
+    }
+
+    .country-tour {
+        margin: 0 40px 30px;
+    }
+
+    .popup {
+        width: 40%;
+        height: 35%;
+    }
+
+    .city-name {
+        font-size: 1.6rem;
+    }
+    
+    .temperature,
+    .weather-icon {
+        font-size: 1.4rem;
+    }
+
+    .popup-btn {
+        padding: 15px 20px;
+        font-size: 1.3r;
+    }
+
+    footer {
+        font-size: 1.5rem;
+        height: 10vh;
+        line-height: 10vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        margin: 0 55px;
+    }
+
+    footer {
+        height: 18vh;
+        line-height: 18vh;
+    }
+}
+
+@media (min-width: 1280px) {
+    .wrapper {
+        margin: 0 100px;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    li {
+        display: inline-block;
+        width: 30%;
+        margin: 0 10px;
+    }
+    
+    li a {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 20px 80px;
+        font-size: 1.4rem;
+    }
+
+    .header-box h1 {
+        font-size: 6rem;
+    }
+
+    .country-pic {
+        height: 420px;
+    }
+
+    .popup {
+        width: 20%;
+        height: 35%;
+    }
+
+    section {
+        margin: 40px 10px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .popup {
+        width: 15%;
+        height: 35%;
+    }
+
+    footer {
+        height: 10vh;
+        line-height: 10vh;
+    }
 }

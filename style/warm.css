@@ -37,3 +37,45 @@
 .country-pic-10 {
     background-image: url(../img/meksyk.jpg);
 }
+
+@media (min-width: 730px) {
+    .country-pic-1 {
+        background-image: url(../img/portugalia-2.jpg);
+    }
+
+    .country-pic-2 {
+        background-image: url(../img/włochy-2.jpg);
+    }
+
+    .country-pic-3 {
+        background-image: url(../img/chorwacja-2.jpg);
+    }
+
+    .country-pic-4 {
+        background-image: url(../img/grecja-2.jpg);
+    }
+
+    .country-pic-5 {
+        background-image: url(../img/hiszpania-2.jpg);
+    }
+
+    .country-pic-6 {
+        background-image: url(../img/tunezja-2.jpg);
+    }
+
+    .country-pic-7 {
+        background-image: url(../img/madagaskar-2.jpg);
+    }
+
+    .country-pic-8 {
+        background-image: url(../img/turcja-2.jpg);
+    }
+
+    .country-pic-9 {
+        background-image: url(../img/filipiny-2.jpg);
+    }
+
+    .country-pic-10 {
+        background-image: url(../img/meksyk-2.jpg);
+    }
+}
